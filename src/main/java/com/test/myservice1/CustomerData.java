@@ -11,7 +11,7 @@ public class CustomerData {
 	public CustomerData()
 	{
 		customers = new ArrayList<Customer>();
-		customers.add(new Customer("C","23445322","Nombre1","Nombre2","Apellido1","Apellido2", "3006005967", "Calle 85", "Bogota" ));
+		customers.add(new Customer("C","23445322","Jenny","Nombre2","Perez","Apellido2", "3006005967", "Calle 85", "Bogota" ));
 	}
 	public Customer getCustomerInfo(String id, String idType){
 		Customer customer = customers.stream()

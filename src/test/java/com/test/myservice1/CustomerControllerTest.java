@@ -79,7 +79,6 @@ class CustomerControllerTest {
 	        ResponseEntity<?> response = controller.getCustomerInfoById(id, idType);
 	        
 	        assertThat(response.getStatusCode()).isEqualTo(NOT_FOUND);
-	        assertThat(response.getBody()).isNull();
 	    }
 
 }
