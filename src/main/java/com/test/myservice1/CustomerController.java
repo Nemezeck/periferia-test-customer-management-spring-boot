@@ -62,9 +62,11 @@ public class CustomerController {
 				errorResponse.put("status", HttpStatus.BAD_REQUEST.value());
 		        errorResponse.put("error", "Bad Request");
 		        errorResponse.put("path", "/customer");
+		        break;
 			default:
 				errorResponse.put("status", HttpStatus.INTERNAL_SERVER_ERROR.value());
 		        errorResponse.put("path", "/customer");
+		        
 		}
 		
 		return errorResponse;
